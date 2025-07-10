@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
   const toggleBtn = document.getElementById('theme-toggle');
   const htmlEl = document.documentElement;
-  
+  const getCurrentTheme = () => {
+    return htmlEl.getAttribute('data-theme') || 'light';
+  };
+  const setTheme = (theme) => {
+    htmlEl.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    toggleBtn.textContent = `${theme === 'dark' ? '☀️' : '🌙'} Style`;
+  };
   toggleBtn.addEventListener('click', () => {
-    const currentTheme = htmlEl.getAttribute('data-theme');
+    const currentTheme = getCurrentTheme();
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
-    htmlEl.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-    
-    toggleBtn.textContent = `${newTheme === 'dark' ? '☀️' : '🌙'} 主题`;
+    setTheme(newTheme);
   });
-  
-  // 初始化按钮文本
-  const currentTheme = htmlEl.getAttribute('data-theme');
-  toggleBtn.textContent = `${currentTheme === 'dark' ? '☀️' : '🌙'} 主题`;
+  setTheme(getCurrentTheme());
 });
