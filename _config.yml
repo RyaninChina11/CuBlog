@@ -1,13 +1,13 @@
-title: 我的博客
-description: 一个简洁的Jekyll博客
+title: My Blog
+description: A tidy Jekyll Blog
 baseurl: ""
 url: "https://yourusername.github.io"
 
-# 主题配置
-theme: auto # auto/light/dark
+# Style Settings
+color_scheme: auto # auto/light/dark
 accent_color: "#4a86e8"
 
-# 社交账户配置 (示例)
+# Social Accounts Settings
 social:
   github: yourusername
   twitter: yourhandle
