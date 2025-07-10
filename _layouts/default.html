@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="{{ site.theme | default: 'auto' }}">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  {% include header.html %}
+  
+  <main class="container">
+    {{ content }}
+  </main>
+  
+  {% include footer.html %}
+  
+  <script src="{{ '/assets/js/theme-switcher.js' | relative_url }}" defer></script>
+</body>
+</html>

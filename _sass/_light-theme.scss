@@ -1,0 +1,7 @@
+@mixin light-theme {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --link-color: #1a0dab;
+  --accent-color: #{$accent-color};
+  --header-bg: #f8f8f8;
+}

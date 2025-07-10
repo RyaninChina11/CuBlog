@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} | {{ site.title }}</title>
+
+<!-- 主题切换逻辑 -->
+<script>
+  const savedTheme = localStorage.getItem('theme');
+  const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const defaultTheme = savedTheme || (systemDark ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', defaultTheme);
+</script>
+
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">

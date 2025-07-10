@@ -1,0 +1,31 @@
+---
+---
+
+@import "variables";
+@import "light-theme";
+@import "dark-theme";
+
+:root {
+  --transition: all 0.3s ease;
+}
+
+[data-theme="light"] {
+  @include light-theme;
+}
+
+[data-theme="dark"] {
+  @include dark-theme;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+a {
+  color: var(--link-color);
+  &:hover {
+    color: var(--accent-color);
+  }
+}
