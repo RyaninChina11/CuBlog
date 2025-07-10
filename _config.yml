@@ -1,7 +1,7 @@
-title: My Blog
+title: CuBlog
 description: A tidy Jekyll Blog
-baseurl: ""
-url: "https://yourusername.github.io"
+baseurl: "CuBlog"
+url: "https://ryanincn11.me"
 
 # Style Settings
 color_scheme: auto # auto/light/dark
