@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
@@ -23,16 +23,21 @@ jobs:
         
     - name: Build site
       run: bundle exec jekyll build --baseurl "${{ github.event.repository.name }}"
-      
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v1
+      uses: actions/upload-pages-artifact@v2
       with:
         path: ./_site
 
   deploy:
     if: github.ref == 'refs/heads/main'
     needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
     - name: Deploy to GitHub Pages
-      uses: actions/deploy-pages@v1
+      uses: actions/deploy-pages@v2
