@@ -1,13 +1,7 @@
 <div class="social-links">
-  {% for account in site.social %}
-    {% if account[1] %}
-      <a href="https://{{ account[0] }}.com/{{ account[1] }}" target="_blank">
-        <img 
-          src="/assets/icons/{{ account[0] }}.svg" 
-          alt="{{ account[0] | capitalize }}"
-          width="24"
-        >
+  {% if site.github %}
+      <a href="https://github.com/{% site.github %}" target="_blank">
+        <i class="fa fa-github"></i>
       </a>
-    {% endif %}
-  {% endfor %}
+  {% endif %}
 </div>

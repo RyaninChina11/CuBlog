@@ -8,9 +8,8 @@ color_scheme: auto # auto/light/dark
 accent_color: "#4a86e8"
 
 # Social Accounts Settings
-social:
-  github: yourusername
-  twitter: yourhandle
-  linkedin: yourprofile
-  email: your@email.com
-  instagram: yourinsta
+github: yourusername
+twitter: yourhandle
+linkedin: yourprofile
+email: your@email.com
+instagram: yourinsta

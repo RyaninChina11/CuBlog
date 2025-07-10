@@ -1,7 +1,0 @@
-- name: github
-  icon: github.svg
-  url: https://github.com/{username}
-  
-- name: twitter
-  icon: twitter.svg
-  url: https://twitter.com/{username}
