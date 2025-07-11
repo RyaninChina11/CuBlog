@@ -1,7 +1,42 @@
 <div class="social-links">
-  {% if site.github %}
-      <a href="https://github.com/{% site.github %}" target="_blank">
+    {% if site.github %}
+    <button onclick="jumpToGithub()" target="_blank">
         <i class="fa fa-github"></i>
-      </a>
-  {% endif %}
+    </button>
+    <script>
+        function jumpToGithub() {
+            window.location.href = 'https://www.github.com/{% site.github %}'
+        }
+    </script>
+    {% endif %}
+    {% if site.facebook %}
+    <button onclick="jumpToFaceBook()" target="_blank">
+        <i class="fa fa-facebook-official"></i>
+    </button>
+    <script>
+        function jumpToFaceBook() {
+            window.location.href = 'https://www.facebook.com/{% site.facebook %}'
+        }
+    </script>
+    {% endif %}
+    {% if site.facebook %}
+    <button onclick="jumpToFaceBook()" target="_blank">
+        <i class="fa fa-facebook-official"></i>
+    </button>
+    <script>
+        function jumpToFaceBook() {
+            window.location.href = 'https://www.facebook.com/{% site.facebook %}'
+        }
+    </script>
+    {% endif %}
+    {% if site.x %}
+    <button onclick="jumpToX()" target="_blank">
+        <i class="fa fa-x-twitter"></i>
+    </button>
+    <script>
+        function jumpToX() {
+            window.location.href = 'https://www.x.com/{% site.x %}'
+        }
+    </script>
+    {% endif %}
 </div>
