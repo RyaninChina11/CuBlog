@@ -4,7 +4,6 @@ baseurl: "CuBlog"
 url: "https://ryanincn11.me"
 
 # Style Settings
-color_scheme: auto # auto/light/dark
 accent_color: "#4a86e8"
 
 # Social Accounts Settings

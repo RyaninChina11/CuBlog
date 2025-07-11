@@ -1,18 +1,11 @@
 @import "variables";
-@import "light-theme";
-@import "dark-theme";
+@import "theme";
 
 :root {
   --transition: all 0.3s ease;
 }
 
-[data-theme="light"] {
-  @include light-theme;
-}
-
-[data-theme="dark"] {
-  @include dark-theme;
-}
+@include theme;
 
 body {
   background-color: var(--bg-color);
