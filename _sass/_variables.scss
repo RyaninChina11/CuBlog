@@ -1,1 +1,14 @@
 $accent-color: #4a86e8;
+
+// 设计系统变量
+$spacing-unit: 1rem;
+$transition-duration: 0.3s;
+$border-radius: 4px;
+
+// 阴影参数
+$box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+$hover-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+// 响应式断点
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
