@@ -6,7 +6,33 @@ url: "https://ryanincn11.me"
 # Style Settings
 accent_color: "#4a86e8"
 
-# Social Accounts Settings
-github: yourusername # Github username
-facebook: yourusername # Facebook username
-x: yourusername # X(Twitter) username
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:title/
+
+# Pagination
+paginate: 5
+paginate_path: /blog/page:num
+
+# Site Metadata
+author: "Your Name"
+email: "your@email.com"
+timezone: "Europe/London"
+
+# Internationalization
+lang: en-GB
+
+# Feed Configuration
+plugins:
+  - jekyll-feed
+
+# Social Accounts
+github_username: yourusername
+twitter_username: yourusername
+linkedin_username: yourusername
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
