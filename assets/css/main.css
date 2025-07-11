@@ -1,0 +1,66 @@
+@import "variables";
+@import "theme";
+
+:root {
+  --transition: all 0.3s ease;
+}
+
+@include variables;
+@include theme;
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+a {
+  color: var(--link-color);
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.social-links {
+  display: flex;
+  gap: $spacing-unit;
+  padding: $spacing-unit 0;
+
+  button {
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    border-radius: $border-radius;
+    padding: $spacing-unit * 0.8;
+    cursor: pointer;
+    transition: $transition-duration;
+    color: var(--text-color);
+
+    &:hover {
+      background: var(--accent-color);
+      transform: translateY(-2px);
+      box-shadow: $hover-shadow;
+    }
+
+    i {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.header nav a {
+  position: relative;
+  padding: 0.5rem 1rem;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width $transition-duration ease;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
