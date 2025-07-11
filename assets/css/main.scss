@@ -5,6 +5,7 @@
   --transition: all 0.3s ease;
 }
 
+@include variables;
 @include theme;
 
 body {
