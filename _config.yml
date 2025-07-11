@@ -18,7 +18,7 @@ paginate_path: /blog/page:num
 
 # Site Metadata
 author: "Your Name"
-email: "your@email.com"
+email: "your@email.here"
 timezone: "Europe/London"
 
 # Internationalization
@@ -30,8 +30,8 @@ plugins:
 
 # Social Accounts
 github_username: yourusername
-twitter_username: yourusername
-linkedin_username: yourusername
+facebook_username: yourusername
+x_username: yourusername
 
 # Build settings
 markdown: kramdown
