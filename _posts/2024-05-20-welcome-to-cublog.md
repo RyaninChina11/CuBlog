@@ -2,6 +2,7 @@
 layout: post
 title: "Welcome to CuBlog"
 date: 2024-05-20 10:00:00 +0800
+author: "CuBlog"
 categories: [general]
 ---
 
