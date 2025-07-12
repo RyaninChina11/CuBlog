@@ -10,7 +10,7 @@ accent_color: "#4a86e8"
 collections:
   posts:
     output: true
-    permalink: /blog/:year/:month/:title/
+    permalink: /blog/:title/
 
 # Pagination
 paginate: 5
