@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: home
+---
 
-<head>
-  {% include head.html %}
-  <link rel="stylesheet" href="{{ '/assets/css/post.css' | relative_url }}">
-</head>
-
-<body>
-  {% include header.html %}
-  <main class="container">
     <article class="post">
       <h1>{{ page.title }}</h1>
       <p class="meta">
@@ -26,9 +19,4 @@
       <a class="next" href="{{page.next.url}}">{{page.next.title}} →</a>
       {% endif %}
     </article>
-  </main>
 
-  {% include footer.html %}
-</body>
-
-</html>
