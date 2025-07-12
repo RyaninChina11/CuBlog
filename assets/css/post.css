@@ -43,6 +43,7 @@ article.post {
 
 .post .content {
   line-height: 1.7;
+  flex-wrap: wrap;
   color: var(--text-color);
 }
 
