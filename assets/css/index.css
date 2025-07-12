@@ -148,13 +148,6 @@ article.post-excerpt .meta {
   gap: 0.5rem;
 }
 
-article.post-excerpt .meta::before {
-  content: '\f133';
-  font-family: 'Font Awesome 6 Free';
-  font-weight: 900;
-  font-size: 0.8rem;
-}
-
 article.post-excerpt p {
   color: var(--dark-gray);
   line-height: 1.7;
