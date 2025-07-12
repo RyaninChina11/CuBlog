@@ -11,11 +11,6 @@
   --transition: all 0.3s ease;
 }
 
-.meta i.fas {
-  vertical-align: middle;
-  line-height: inherit;
-}
-
 article.post {
   background: var(--white);
   border-radius: 10px;
@@ -33,7 +28,6 @@ article.post {
 
 .post .meta {
   color: var(--dark-gray);
-  display: flex;
   gap: 1.5rem;
   margin-bottom: 2rem;
   font-size: 0.95rem;
