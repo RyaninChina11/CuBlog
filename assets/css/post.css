@@ -28,6 +28,9 @@ article.post {
 
 .post .meta {
   color: var(--dark-gray);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
   margin-bottom: 2rem;
   font-size: 0.95rem;
 }
