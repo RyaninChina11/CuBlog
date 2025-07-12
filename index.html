@@ -20,10 +20,10 @@ title: Blog Home
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}">← Newer</a>
+    <a href="{{ paginator.previous_page_path }}">&larr; Newer</a>
   {% endif %}
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}">Older →</a>
+    <a href="{{ paginator.next_page_path }}">Older &rarr;</a>
   {% endif %}
 </div>
 {% endif %}
