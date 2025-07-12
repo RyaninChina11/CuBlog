@@ -11,6 +11,11 @@
   --transition: all 0.3s ease;
 }
 
+.post i.fas {
+  vertical-align: middle;
+  line-height: inherit;
+}
+
 article.post {
   background: var(--white);
   border-radius: 10px;
