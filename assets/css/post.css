@@ -14,7 +14,7 @@
 article.post {
   background: var(--white);
   border-radius: 10px;
-  padding: 2rem;
+  padding: 4rem;
   margin: 2rem 0;
   box-shadow: var(--shadow);
 }
